@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 1164px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    padding: 10px 24px;
+    background: #E02C6D;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.login_btn i{
+    margin-right: 8px;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* header css starts */
+
+#header{
+    padding-top: 42px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav_area ul{
+    display: flex;
+}
+.nav_area ul a{
+    margin-right: 36px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+/* header css ends */
+
+/* banner css starts */
+#banner{
+    background-color: #2D25A0;
+    padding: 153px 0 83px 0;
+}
+.row-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.banner_content h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #fff;
+    margin-right: 90px;
+    margin-bottom: 27px;
+}
+.banner_img img{
+    width: 556px;
+}
+/* banner css ends */
