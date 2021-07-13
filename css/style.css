@@ -87,4 +87,7 @@ body{
 .banner_img img{
     width: 556px;
 }
+.banner_content .btn i{
+    margin-left: 8px;
+}
 /* banner css ends */
