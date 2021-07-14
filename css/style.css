@@ -26,6 +26,11 @@ img{
     justify-content: space-between;
     align-items: center;
 }
+.section_heading h3{
+    font-size: 43px;
+    color: #18191F;
+    margin-bottom: 40px;
+}
 
 .btn{
     padding: 10px 24px;
@@ -153,6 +158,73 @@ body{
 }
 /* highlight css ends */
 
+/* latest_news css starts */
+
+#latest_news{
+    padding-bottom: 163px;
+}
+
+#latest_news .row-grid{
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+}
+.latest_news_area {
+    padding: 16px 16px 16px;
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.latest_news_content h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #18191F;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.latest_news_content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+
+.latest_news_content .btn{
+    margin-top: 20px;
+}
+
+.latest_news_area img,
+.latest_news_img {
+    overflow: hidden;
+    transition: all linear 0.3s;
+}
+
+.latest_news_area:hover .latest_news_img img {
+    transform: scale(1.1);
+}
+.slider_icon{
+    margin-top: 30px;
+}
+.slider_icon ul{
+    display: flex;
+    justify-content: center;
+}
+.slider_icon ul li{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0 7px;
+    background-color: #18191F;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+.slider_icon ul li:hover{
+    transform: scale(1.1);
+    background-color: #E02C6D;
+}
+/* latest_news css ends */
+
 /* footer_area css starts */
 #footer{
     padding-bottom: 63px;
@@ -179,6 +251,7 @@ body{
    background: rgba(11, 13, 23, 0.10);
    margin: 0 7px;
    color: #969BAB;
+   transition: all linear 0.3s;
 }
 .copyright p{
     font-size: 18px;
@@ -186,5 +259,10 @@ body{
     line-height: 24px;
     color: #0A0826;
     margin-top: 20px;
+    
+}
+.social_icon ul a:hover{
+    background-color:#E02C6D;
+    color: #0A0826;
 }
 /* footer_area css ends */
