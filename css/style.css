@@ -17,7 +17,7 @@ img{
 }
 
 .container{
-    width: 1164px;
+    width: 70%;
     margin: 0 auto;
 }
 .row{
@@ -38,6 +38,19 @@ img{
     color: #FFFFFF;
     font-size: 16px;
     display: inline-block;
+    border: 1px solid #E02C6D;
+    transition: all linear 0.3s;
+}
+.btn:hover{
+    background: transparent;
+    border: 1px solid #E02C6D;
+    color: #000;
+}
+.bnr_btn:hover,
+.login_btn .btn:hover {
+    background: transparent;
+    border: 1px solid #E02C6D;
+    color: #fff;
 }
 
 .login_btn i{
@@ -68,6 +81,9 @@ body{
     font-size: 16px;
     font-weight: 500;
     color: #fff;
+}
+.toggle_btn{
+    display: none;
 }
 /* header css ends */
 
@@ -225,6 +241,30 @@ body{
 }
 /* latest_news css ends */
 
+/* score css starts */
+#time_table{
+    padding-bottom: 163px;
+}
+
+.team_two,
+.play_tine,
+.team_one{
+    width: 33.33%;
+    text-align: center;
+}
+
+.time_area{
+    padding: 60px;
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.team_name h5{
+    font-size: 30px;
+}
+
+/* score css ends */
+
 /* footer_area css starts */
 #footer{
     padding-bottom: 63px;
@@ -266,3 +306,183 @@ body{
     color: #0A0826;
 }
 /* footer_area css ends */
+
+
+/* responsive css starts */
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    ...
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    /* header area strats */
+    nav.nav_area {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+        color: #fff;
+        font-size: 40px;
+    }
+
+    /* header area ends */
+    /* banner area starts */
+    
+    .banner_content h1 {
+        font-size: 54px;
+        margin-right: 0px;
+        line-height: 62px;
+    }
+    /* banner area ends */
+
+    /* blog area starts */
+    #blog .row-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    /* blog area ends */
+
+    /* highlight area starts */
+    #highlight .row-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .highlight_content{
+        margin-bottom: 50px;
+    }
+    .highlight_content p,
+    .highlight_content h4 {
+        margin-right: 0;
+    }
+    /* highlight area ends */
+
+    /* latest_news area ends */
+    #latest_news .row-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+    /* latest_news area ends */
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+    /* header area strats */
+    nav.nav_area {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+        color: #fff;
+        font-size: 40px;
+    }
+
+    /* header area ends */
+
+    /* banner area starts */
+    #banner .row-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
+    .banner_content {
+        margin-bottom: 50px;
+    }
+
+    /* banner area ends */
+
+    /* blog area starts */
+    #blog .row-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
+    /* blog area ends */
+
+    /* highlight area starts */
+    #highlight .row-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
+    .highlight_content {
+        margin-bottom: 50px;
+    }
+
+    .highlight_content h4 {
+        margin-right: 0px;
+    }
+
+    .highlight_content p {
+        margin-right: 0;
+    }
+
+    /* highlight area ends */
+
+    /* latest_news area starts */
+    #latest_news .row-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        align-items: center;
+    }
+
+    .highlight_content {
+        margin-bottom: 50px;
+    }
+
+    .highlight_content h4 {
+        margin-right: 0px;
+    }
+
+    .highlight_content p {
+        margin-right: 0;
+    }
+
+    /* highlight area ends */
+
+    /* time_table area starts */
+    #time_table .row {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .team_two,
+    .play_tine,
+    .team_one {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* time_table area ends */
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+.banner_content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 0px;
+    margin-bottom: 27px;
+    line-height: 50px;
+}
+}
